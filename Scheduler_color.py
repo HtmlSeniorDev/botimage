@@ -69,7 +69,7 @@ class ServiceScheduler:
                 "user": "60200030df84ef24d5f285d9",
                 "place": room['_id']['$oid'],
                 "message": text,
-                "createdAt": datetime.now() +timedelta(hours=5)
+                "createdAt": datetime.now() +timedelta(hours=5),
                 "type": 1,
                 "attachments": [],
                 "readed": True,
