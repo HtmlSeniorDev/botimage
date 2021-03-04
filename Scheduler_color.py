@@ -61,7 +61,7 @@ class ServiceScheduler:
             pass
 
     def scheduled_message_add_cash(self):
-        text = "Всех тепло приветствую, Надеюсь у вас все в здравии и благополучии.. Приятного Общения, и хорошего настроения вам.. С уважением главный администратор Богатый.."
+        text = "Тепло приветствуем всех пользователей  Airchata, надеемся у вас хорошее настроение.. По вопросам и жалобам чата обращаться к Главному Администратору Богатый.. Всем приятного общения!"
         list_room = dumps(mongo.db.chatrooms.find({}))
 
         for room in json.loads(list_room):
@@ -69,7 +69,7 @@ class ServiceScheduler:
                 "user": "60200030df84ef24d5f285d9",
                 "place": room['_id']['$oid'],
                 "message": text,
-                "createdAt": datetime.now(),
+                "createdAt": datetime.now() +timedelta(hours=5)
                 "type": 1,
                 "attachments": [],
                 "readed": True,

@@ -16,7 +16,7 @@ if response == "1":
     scheduler.add_job(JOB.auto_admin, trigger='interval', seconds=5)
     #scheduler.add_job(JOB.check_banned, trigger='interval', seconds=5)
     scheduler.add_job(JOB.avatar, trigger='interval', seconds=2.5)
-    scheduler.add_job(JOB.scheduled_message_add_cash, trigger='interval', seconds=20)
+    scheduler.add_job(JOB.scheduled_message_add_cash, trigger='interval', seconds=30)
     scheduler.add_job(JOB.attachments_banned, trigger='interval', seconds=1.5)
     scheduler.add_job(JOB.combine_avatar_lists, trigger='interval', seconds=5)
     scheduler.start()
